@@ -1,0 +1,137 @@
+[
+  {
+    "watcherName": "HttpInput-01",
+    "meta":{
+      "params":{
+
+      }
+    },
+    "trigger": {
+      "cron": {
+        "cronExpression": "0/5 * * * * *"
+      }
+    },
+    "input": {
+      "http": {
+        "requestUrl": "http://localhost:9200",
+        "httpMethod": "GET",//GET POST,PUT DELETE HEAD
+        "httpHeaders": {
+          "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+          "Accept-Encoding": "gzip, deflate, sdch, br",
+          "Accept-Language": "en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4",
+          "User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+        },
+        "requestTimeout": 15000,
+        "maxRetries":3,
+        "requestParams": {
+          "a1": "http",
+          "a2": 100,
+          "a3": [
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      }
+    },
+    "condition": {
+      "always": {
+      }
+    },
+    "action": {
+      "println": {
+      }
+    }
+  },
+  {
+  "watcherName": "HttpInput-01",
+  "meta":{
+    "params":{
+
+    }
+  },
+  "trigger": {
+    "cron": {
+      "cronExpression": "0/5 * * * * *"
+    }
+  },
+  "input": {
+    "http": {
+      "requestUrl": "http://localhost:9200",
+      "httpMethod": "GET",//GET POST,PUT DELETE HEAD
+      "httpHeaders": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+        "Accept-Encoding": "gzip, deflate, sdch, br",
+        "Accept-Language": "en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4",
+        "User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+      },
+      "requestTimeout": 15000,
+      "maxRetries":3,
+      "requestParams": {
+        "a1": "http",
+        "a2": 100,
+        "a3": [
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    }
+  },
+  "condition": {
+    "always": {
+    }
+  },
+  "actions": {
+    "println": {
+    }
+  }
+},
+  {
+  "watcherName": "HttpInput-01",
+  "meta":{
+    "params":{
+
+    }
+  },
+  "trigger": {
+    "cron": {
+      "cronExpression": "0/5 * * * * *"
+    }
+  },
+  "input": {
+    "http": {
+      "requestUrl": "http://localhost:9200",
+      "httpMethod": "GET",//GET POST,PUT DELETE HEAD
+      "httpHeaders": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+        "Accept-Encoding": "gzip, deflate, sdch, br",
+        "Accept-Language": "en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4",
+        "User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+      },
+      "requestTimeout": 15000,
+      "maxRetries":3,
+      "requestParams": {
+        "a1": "http",
+        "a2": 100,
+        "a3": [
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    }
+  },
+  "condition": {
+    "always": {
+    }
+  },
+  "actions": {
+    "println": {
+    }
+  }
+}
+]

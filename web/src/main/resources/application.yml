@@ -1,0 +1,14 @@
+
+spring:
+  application:
+    name: "x-watcher-web-admin"
+  main:
+    banner-mode: "off"
+    web-environment: true
+
+server:
+  port: 9200
+  display-name: "x-watcher-admin-web"
+
+
+

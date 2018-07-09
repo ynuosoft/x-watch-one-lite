@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>x-watcher-one</artifactId>
+        <groupId>com.watcher</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>x-alerts-engine</artifactId>
+    <name>engine</name>
+
+    <properties>
+
+    </properties>
+
+
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <targetPath>../classes</targetPath>
+            </resource>
+            <resource>
+                <directory>src/main/scripts</directory>
+                <targetPath>../scripts</targetPath>
+            </resource>
+            <resource>
+                <directory>src/main/templates_00</directory>
+                <targetPath>../templates</targetPath>
+            </resource>
+            <resource>
+                <directory>src/main/watchers</directory>
+                <targetPath>../watchers</targetPath>
+            </resource>
+        </resources>
+        <pluginManagement>
+            <plugins>
+
+            </plugins>
+        </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>1.4.3.RELEASE</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencyManagement>
+        <dependencies>
+
+        </dependencies>
+    </dependencyManagement>
+    <dependencies>
+        <dependency>
+            <groupId>com.watcher</groupId>
+            <artifactId>x-watcher-core</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.watcher</groupId>
+            <artifactId>x-watcher-plugin</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+</project>

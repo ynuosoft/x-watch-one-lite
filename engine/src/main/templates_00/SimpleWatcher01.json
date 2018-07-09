@@ -1,0 +1,30 @@
+{
+  "watcherName": "simplewatcher-01",
+  "trigger": {
+    "cron": {
+      "cronExpression": "5 0/1 * * * *"
+    }
+  },
+  "input": {
+    "simple": {
+      "params": {
+        "requestUrl": "http",
+        "timeout": 100,
+        "hello": [
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    }
+  },
+  "condition": {
+    "always": {
+    }
+  },
+  "actions": {
+    "println": {
+    }
+  }
+}
